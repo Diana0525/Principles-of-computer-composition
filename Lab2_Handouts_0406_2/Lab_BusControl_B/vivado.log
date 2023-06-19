@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 10 17:28:25 2020
+# Process ID: 18808
+# Current directory: D:/Lab_of_ZCYL/Lab2_Handouts_0406_2/Lab_BusControl_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6740 D:\Lab_of_ZCYL\Lab2_Handouts_0406_2\Lab_BusControl_B\Lab_BusControl_B.xpr
+# Log file: D:/Lab_of_ZCYL/Lab2_Handouts_0406_2/Lab_BusControl_B/vivado.log
+# Journal file: D:/Lab_of_ZCYL/Lab2_Handouts_0406_2/Lab_BusControl_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Lab_of_ZCYL/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 683.453 ; gain = 87.285
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Fri Apr 10 17:30:16 2020] Launched synth_1...
+Run output will be captured here: D:/Lab_of_ZCYL/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 10 17:30:54 2020...
