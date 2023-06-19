@@ -1,0 +1,287 @@
+
+*** Running vivado
+    with args -log booth.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source booth.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source booth.tcl -notrace
+Command: synth_design -top booth -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11080 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 362.930 ; gain = 100.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'booth' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'booth' (1#1) [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 418.516 ; gain = 156.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 418.516 ; gain = 156.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 418.516 ; gain = 156.500
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'z_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:109]
+WARNING: [Synth 8-327] inferring latch for variable 'busy_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'record_z_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'record_start_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'control_move_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'count_move_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'minus_y_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:87]
+WARNING: [Synth 8-327] inferring latch for variable 'record_y_reg' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:85]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 418.516 ; gain = 156.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module booth 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'record_y_reg[0]' (LD) to 'minus_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'record_y_reg[7]' (LD) to 'record_y_reg[8]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[17] with 1st driver pin 'record_z_reg[17]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[17] with 2nd driver pin 'record_z_reg[17]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[16] with 1st driver pin 'record_z_reg[16]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[16] with 2nd driver pin 'record_z_reg[16]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[15] with 1st driver pin 'record_z_reg[15]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[15] with 2nd driver pin 'record_z_reg[15]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[14] with 1st driver pin 'record_z_reg[14]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[14] with 2nd driver pin 'record_z_reg[14]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[13] with 1st driver pin 'record_z_reg[13]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[13] with 2nd driver pin 'record_z_reg[13]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[12] with 1st driver pin 'record_z_reg[12]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[12] with 2nd driver pin 'record_z_reg[12]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[11] with 1st driver pin 'record_z_reg[11]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[11] with 2nd driver pin 'record_z_reg[11]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[10] with 1st driver pin 'record_z_reg[10]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[10] with 2nd driver pin 'record_z_reg[10]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[9] with 1st driver pin 'record_z_reg[9]__0/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin record_z[9] with 2nd driver pin 'record_z_reg[9]/Q' [D:/Lab_of_ZCYL/Booth/Booth.srcs/sources_1/new/booth.v:90]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        9|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     3|
+|3     |LUT1   |     6|
+|4     |LUT2   |     8|
+|5     |LUT3   |     6|
+|6     |LUT4   |    12|
+|7     |LUT5   |    10|
+|8     |LUT6   |    17|
+|9     |FDRE   |    16|
+|10    |LD     |    50|
+|11    |LDC    |     4|
+|12    |LDP    |     2|
+|13    |IBUF   |    18|
+|14    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   171|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 18 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 572.957 ; gain = 310.941
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 672.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  LD => LDCE: 50 instances
+  LDC => LDCE: 4 instances
+  LDP => LDPE: 1 instances
+  LDP => LDPE (inverted pins: G): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 8 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 672.902 ; gain = 412.871
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 672.902 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Lab_of_ZCYL/Booth/Booth.runs/synth_1/booth.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file booth_utilization_synth.rpt -pb booth_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 10:23:28 2020...

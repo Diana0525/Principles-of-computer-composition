@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 16 10:22:01 2020
+# Process ID: 23008
+# Current directory: D:/Lab_of_ZCYL/Booth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11856 D:\Lab_of_ZCYL\Booth\Booth.xpr
+# Log file: D:/Lab_of_ZCYL/Booth/vivado.log
+# Journal file: D:/Lab_of_ZCYL/Booth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Lab_of_ZCYL/Booth/Booth.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 682.203 ; gain = 71.719
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Apr 16 10:23:05 2020] Launched synth_1...
+Run output will be captured here: D:/Lab_of_ZCYL/Booth/Booth.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 10:23:42 2020...
